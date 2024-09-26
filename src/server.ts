@@ -16,10 +16,11 @@ app.use(cors({
     credentials:true,
     origin:["http://localhost:4200"]
 }));
-// app.use("/api/",asyncHandler(async (req, res) => {
-//     res.json("Hello Mouli!");
-// }))
+app.use("/api/",asyncHandler(async (req, res) => {
+    res.json("Hello Mouli!");
+}))
 app.use("/api/foods", foodRouter);
+
 
 app.use("/api/users", userRouter);
 app.use("/api/orders", orderRouter)
