@@ -18,7 +18,7 @@ app.use(cors({
 }));
 
 
-app.use("/api", foodRouter);
+// app.use("/api", foodRouter);
 app.use("/api/foods", foodRouter);
 
 
