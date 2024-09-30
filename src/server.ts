@@ -12,12 +12,13 @@ dbConnect();
 
 const app = express();
 app.use(express.json());
-app.use(cors({
-    credentials:true,
-    // origin:["http://localhost:4200"]
-    origin:["https://food-mine-frontend.vercel.app"]
+app.use(cors());
+// {
+    // credentials:true,
+    // origin:"*"
+    // origin:["https://food-mine-frontend.vercel.app"]
     // https://food-mine-frontend.vercel.app/
-}));
+// }));
 
 
 // app.use("/api", foodRouter);
